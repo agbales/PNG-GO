@@ -1,0 +1,190 @@
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+body {
+  font-family: 'Abril Fatface', cursive;
+  text-align: center;
+  margin: -50px auto;
+  background-color: #fff;
+}
+
+.wrapper {
+  margin: 420px 450px;
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  opacity: .5;
+}
+
+#base {
+  opacity: 1;
+}
+
+.yellowstone {
+  position: relative;
+  top: 100;
+  right: 0;
+  text-align: left;
+  margin: 0px 100px;
+  width: 300px;
+  color: #181818;
+  transition: all 300ms ease;
+}
+
+.right-plume {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: -10px 88px;  
+  -webkit-animation: plume 8s linear infinite;
+  -moz-animation: plume 8s linear infinite;
+  -ms-animation: plume 8s linear infinite;
+  animation: plume 8s linear infinite;
+}
+
+.top-plume {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0px 90px;
+  -webkit-animation: plume 7s linear infinite;
+  -moz-animation: plume 7s linear infinite;
+  -ms-animation: plume 7s linear infinite;
+  animation: plume 7s linear infinite;
+  animation-delay: 3.5s;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.plume {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  margin: 40px 0px;
+}
+
+.rock {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+}
+
+
+/* box to frame out spinning color */
+
+.spin-cutout {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+}
+
+#top {
+  height: 5px;
+  width: 800px;
+}
+
+#right {
+  height: 650px;
+  width: 300px;
+  margin: 0px 460px;
+}
+
+#bottom {
+  height: 200px;
+  width: 500px;
+  margin: 460px 0px;
+}
+
+#left {
+  height: 650px;
+  width: 40px;
+}
+
+/* spinning bg color */
+
+.water-spin {
+  position: absolute;
+  opacity: .4;
+  left: 0;
+  top: 0;
+  margin: -240px -100px;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  background: -webkit-radial-gradient(25px 25px, circle, #000, #7ec0ee);
+  background: -moz-radial-gradient(25px 25px, circle, #000, #7ec0ee);
+  background: radial-gradient(25px 25px, circle, #000, #7ec0ee);
+ 
+  /* Spin background sphere */
+  -webkit-animation: spin 2.3s linear infinite;
+  -moz-animation: spin 2.3s linear infinite;
+  -ms-animation: spin 2.3s linear infinite;
+  animation: spin 2.3s linear infinite;
+  
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  
+  position: absolute;
+  left: 0;
+}
+
+@-ms-keyframes spin {
+  from { -ms-transform: rotate(0deg); }
+  to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); }
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
+
+
+/* plume animation */
+
+@-ms-keyframes plume {    
+    0%, 100% { -webkit-transform: translateY(0); }
+    50% { -webkit-transform: translateY(8px); }
+}
+
+@-moz-keyframes plume {    
+    0%, 100% { -webkit-transform: translateY(0); }
+    50% { -webkit-transform: translateY(8px); }
+}
+@keyframes plume {    
+    0%, 100% { -webkit-transform: translateY(0); }
+    50% { -webkit-transform: translateY(8px); }
+}
+
+@-webkit-keyframes plume {    
+    0%, 100% { -webkit-transform: translateY(0); }
+    50% { -webkit-transform: translateY(8px); }
+}
+
+/* media break */
+
+@media (max-width: 970px) {
+  .yellowstone {
+    margin: 650px -390px;
+  }
+}

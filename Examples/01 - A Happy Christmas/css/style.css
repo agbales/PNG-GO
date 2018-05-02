@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Great+Vibes);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display+SC:700);
+
+.color-spin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -5;
+  margin: -150px 100px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: -webkit-radial-gradient(25px 25px, circle, #22A7F0, #3FC380);
+  background: -moz-radial-gradient(25px 25px, circle, #22A7F0, #3FC380);
+  background: radial-gradient(25px 25px, circle, #22A7F0, #3FC380);
+ 
+  /* Spin background sphere */
+  -webkit-animation: spin .4s linear infinite;
+  -moz-animation: spin .4s linear infinite;
+  -ms-animation: spin .4s linear infinite;
+  animation: spin .4s linear infinite;
+}
+
+.xmas {
+  height: 350px;
+  margin: -10px 0px;
+  -webkit-box-shadow: 4px 8px 20px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 4px 8px 20px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 4px 8px 20px 0px rgba(50, 50, 50, 0.75);
+}
+
+.happy {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 28px;
+  height: 100%;
+  width: 575px;
+  color: #181818;
+  text-align: center;
+}
+
+.container {
+ margin: -30px 55px;
+ height: 100%;
+ width: 575px;
+ overflow: hidden;
+ padding: 35px 35px;
+ -webkit-box-shadow: inset 4px 8px 20px 0px rgba(50, 50, 50, 0.75);
+ -moz-box-shadow: inset 4px 8px 20px 0px rgba(50, 50, 50, 0.75);
+ box-shadow: inset 4px 8px 20px 0px rgba(50, 50, 50, 0.75);
+}
+
+.spacer {
+  height: 80px;
+  width: 100%;
+  background: #fff;
+  margin: -10px 0px;
+}
+
+hr {
+  width: 80px;
+  opacity: .7;
+  color: #181818;
+}
+
+p {
+  font-family: 'Great Vibes', cursive;
+  font-size: 28px;
+  color: #181818;
+}
+
+@-ms-keyframes spin {
+  from { -ms-transform: rotate(0deg); }
+  to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); }
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
